@@ -1,0 +1,15 @@
+[project]
+name = "analytics"
+version = "0.1.0"
+dependencies = [
+    "alembic>=1.18.4",
+    "app-data",
+    "config",
+    "psycopg>=3.3.3",
+    "sqlalchemy>=2.0.48",
+]
+
+[tool.uv.sources]
+blueprints = { workspace = true }
+config = { workspace = true }
+app-data = { workspace = true }

@@ -1,0 +1,10 @@
+[project]
+name = "blueprints"
+version = "0.1.0"
+dependencies = [
+    "pydantic",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,12 @@
+[project]
+name = "collector"
+version = "0.1.0"
+dependencies = [
+    "aiokafka>=0.13.0",
+    "config",
+    "websockets>=16.0",
+]
+
+[tool.uv.sources]
+blueprints = { workspace = true }
+config = { workspace = true }

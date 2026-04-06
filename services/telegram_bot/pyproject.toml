@@ -1,0 +1,11 @@
+[project]
+name = "telegram_bot"
+version = "0.1.0"
+dependencies = [
+    "aiogram>=3.26.0",
+    "config",
+]
+
+[tool.uv.sources]
+blueprints = { workspace = true }
+config = { workspace = true }
