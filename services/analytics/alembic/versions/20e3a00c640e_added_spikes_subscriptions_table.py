@@ -26,6 +26,14 @@ def upgrade() -> None:
     sa.Column('symbol', sa.String(), nullable=False),
     sa.PrimaryKeyConstraint('telegram_id', 'symbol')
     )
+
+    op.execute(
+        """
+        INSERT INTO spikes_subscriptions (telegram_id, symbol)
+        SELECT telegram_id, 'BTCUSDT'
+        FROM subscriptions
+        """
+    )
     # ### end Alembic commands ###
 
 
